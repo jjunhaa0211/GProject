@@ -7,7 +7,14 @@
 
 import Foundation
 
+// MARK: - ChatGPTRequest
 struct ChatGPTRequest: Codable {
-    var model: String
-    var messages: String
+    let model: String
+    let messages: [Message]
+    
+    // MARK: - Message
+    struct Message: Codable {
+        let role, content: String
+    }
+
 }

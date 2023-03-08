@@ -19,16 +19,20 @@ final class Service {
 
     let provider = MoyaProvider<API>(plugins: [MoyaLoggingPlugin()])
     
-    func gptBoot(_ model: String, _ messages: String) -> Single<networkingResult> {
-        return provider.rx.request(.chatGPT(ChatGPTRequest(model: model, messages: messages)))
+    func gptBoot(_ model: String, _ role: String, _ content: String) -> Single<networkingResult> {
+        let message = ChatGPTRequest.Message(role: role, content: content)
+        let chatGPTRequest = ChatGPTRequest(model: model, messages: [message])
+        return provider.rx.request(.chatGPT(chatGPTRequest))
             .filterSuccessfulStatusCodes()
             .map(TokenModel.self)
-            .map{ response -> networkingResult in
+            .map { response -> networkingResult in
                 Token.accessToken = response.accessToken
                 Token.refreshToken = response.refreshToken
                 return .ok
             }
-            .catch {[unowned self] in return .just(setNetworkError($0))}
+            .catch { [unowned self] in
+                return .just(setNetworkError($0))
+            }
     }
     
     func setNetworkError(_ error: Error) -> networkingResult {

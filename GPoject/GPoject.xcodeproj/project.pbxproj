@@ -30,6 +30,8 @@
 		0EA9A19729B702C800EDB336 /* GPojectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9A19629B702C800EDB336 /* GPojectTests.swift */; };
 		0EA9A1A129B702C800EDB336 /* GPojectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9A1A029B702C800EDB336 /* GPojectUITests.swift */; };
 		0EA9A1A329B702C800EDB336 /* GPojectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9A1A229B702C800EDB336 /* GPojectUITestsLaunchTests.swift */; };
+		0EDA5BC129B883D100D60E09 /* GPTViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDA5BC029B883D100D60E09 /* GPTViewModel.swift */; };
+		0EDA5BC329B8841000D60E09 /* BaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDA5BC229B8841000D60E09 /* BaseVM.swift */; };
 		16F07DD2F840ED0028FEC226 /* Pods_GPoject_GPojectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B562E1D99A2F867060517C3 /* Pods_GPoject_GPojectUITests.framework */; };
 		568BCA3872FBDF9A4DA94AF4 /* Pods_GPojectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B71EB5CFAC24DE7D154DE6A /* Pods_GPojectTests.framework */; };
 		F43FCC9B6D10B86609BAFD60 /* Pods_GPoject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698FED0D3BF44D4ECD3570AE /* Pods_GPoject.framework */; };
@@ -80,6 +82,8 @@
 		0EA9A19C29B702C800EDB336 /* GPojectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPojectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EA9A1A029B702C800EDB336 /* GPojectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPojectUITests.swift; sourceTree = "<group>"; };
 		0EA9A1A229B702C800EDB336 /* GPojectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPojectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0EDA5BC029B883D100D60E09 /* GPTViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTViewModel.swift; sourceTree = "<group>"; };
+		0EDA5BC229B8841000D60E09 /* BaseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVM.swift; sourceTree = "<group>"; };
 		1B67C9B62F63234E7440D877 /* Pods-GPojectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPojectTests.release.xcconfig"; path = "Target Support Files/Pods-GPojectTests/Pods-GPojectTests.release.xcconfig"; sourceTree = "<group>"; };
 		2B71EB5CFAC24DE7D154DE6A /* Pods_GPojectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GPojectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64541CE3BEB5CBE976179A92 /* Pods-GPoject-GPojectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPoject-GPojectUITests.release.xcconfig"; path = "Target Support Files/Pods-GPoject-GPojectUITests/Pods-GPoject-GPojectUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +172,8 @@
 				0E8085C529B7551600504846 /* CustomChatCell.swift */,
 				0E8085C729B7552D00504846 /* CustomChatCellLayout.swift */,
 				0E8085C929B7553E00504846 /* APChatViewController.swift */,
+				0EDA5BC029B883D100D60E09 /* GPTViewModel.swift */,
+				0EDA5BC229B8841000D60E09 /* BaseVM.swift */,
 				0E8085CB29B8442100504846 /* Networking */,
 				0EA9A18829B702C800EDB336 /* Assets.xcassets */,
 				0EA9A18A29B702C800EDB336 /* LaunchScreen.storyboard */,
@@ -457,12 +463,14 @@
 			files = (
 				0E8085DD29B854D000504846 /* MoyaLoggingPlugin.swift in Sources */,
 				0E8085D529B853FD00504846 /* TargetType.swift in Sources */,
+				0EDA5BC129B883D100D60E09 /* GPTViewModel.swift in Sources */,
 				0E8085CD29B8442F00504846 /* Api.swift in Sources */,
 				0E8085C229B754DE00504846 /* APGPTModel.swift in Sources */,
 				0E8085D129B8458100504846 /* RequestModel.swift in Sources */,
 				0E8085CF29B8449200504846 /* BaseURL.swift in Sources */,
 				0EA9A18729B702C700EDB336 /* GPoject.xcdatamodeld in Sources */,
 				0E8085C029B754BD00504846 /* Extension+UITableViewCell.swift in Sources */,
+				0EDA5BC329B8841000D60E09 /* BaseVM.swift in Sources */,
 				0E8085C429B754F500504846 /* APChatModel.swift in Sources */,
 				0E8085D929B8548900504846 /* networkingResult.swift in Sources */,
 				0EA9A18129B702C700EDB336 /* ViewController.swift in Sources */,
