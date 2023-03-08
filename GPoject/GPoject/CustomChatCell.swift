@@ -9,7 +9,6 @@ import Foundation
 import MessageKit
 
 open class CustomChatCell: UICollectionViewCell {
-    
     //let label = UILabel()
     let label = UITextView()
     

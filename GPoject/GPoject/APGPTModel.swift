@@ -88,11 +88,11 @@ extension Date {
     }
     func UTCToLocal(withFormat format: String = "dd-MM-yyyy HH:mm:ss") -> String {
         let formatter = DateFormatter()
-        // initially set the format based on your datepicker date / server String
+        //초기 날짜 설정
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         
-        let myString = formatter.string(from: self) // string purpose I add here
-        // convert your string to date
+        let myString = formatter.string(from: self) // 추가되는 문자열
+        // 문자열 날짜로 변환
         let yourDate = formatter.date(from: myString)
         //then again set the date format whhich type of output you need
         formatter.dateFormat = "dd-MM-yyyy HH:mm:ss"

@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E8085C029B754BD00504846 /* APExtension+UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8085BF29B754BD00504846 /* APExtension+UITableViewCell.swift */; };
+		0E8085C029B754BD00504846 /* Extension+UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8085BF29B754BD00504846 /* Extension+UITableViewCell.swift */; };
 		0E8085C229B754DE00504846 /* APGPTModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8085C129B754DE00504846 /* APGPTModel.swift */; };
 		0E8085C429B754F500504846 /* APChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8085C329B754F500504846 /* APChatModel.swift */; };
 		0E8085C629B7551600504846 /* CustomChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8085C529B7551600504846 /* CustomChatCell.swift */; };
 		0E8085C829B7552D00504846 /* CustomChatCellLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8085C729B7552D00504846 /* CustomChatCellLayout.swift */; };
 		0E8085CA29B7553E00504846 /* APChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8085C929B7553E00504846 /* APChatViewController.swift */; };
+		0E8085CD29B8442F00504846 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8085CC29B8442F00504846 /* Api.swift */; };
+		0E8085CF29B8449200504846 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8085CE29B8449200504846 /* BaseURL.swift */; };
+		0E8085D129B8458100504846 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8085D029B8458100504846 /* RequestModel.swift */; };
+		0E8085D329B853CE00504846 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8085D229B853CE00504846 /* Header.swift */; };
+		0E8085D529B853FD00504846 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8085D429B853FD00504846 /* TargetType.swift */; };
+		0E8085D929B8548900504846 /* networkingResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8085D829B8548900504846 /* networkingResult.swift */; };
+		0E8085DB29B854AD00504846 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8085DA29B854AD00504846 /* Service.swift */; };
+		0E8085DD29B854D000504846 /* MoyaLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8085DC29B854D000504846 /* MoyaLoggingPlugin.swift */; };
 		0EA9A17D29B702C700EDB336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9A17C29B702C700EDB336 /* AppDelegate.swift */; };
 		0EA9A17F29B702C700EDB336 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9A17E29B702C700EDB336 /* SceneDelegate.swift */; };
 		0EA9A18129B702C700EDB336 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9A18029B702C700EDB336 /* ViewController.swift */; };
@@ -45,12 +53,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E8085BF29B754BD00504846 /* APExtension+UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APExtension+UITableViewCell.swift"; sourceTree = "<group>"; };
+		0E8085BF29B754BD00504846 /* Extension+UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableViewCell.swift"; sourceTree = "<group>"; };
 		0E8085C129B754DE00504846 /* APGPTModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APGPTModel.swift; sourceTree = "<group>"; };
 		0E8085C329B754F500504846 /* APChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APChatModel.swift; sourceTree = "<group>"; };
 		0E8085C529B7551600504846 /* CustomChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomChatCell.swift; sourceTree = "<group>"; };
 		0E8085C729B7552D00504846 /* CustomChatCellLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomChatCellLayout.swift; sourceTree = "<group>"; };
 		0E8085C929B7553E00504846 /* APChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APChatViewController.swift; sourceTree = "<group>"; };
+		0E8085CC29B8442F00504846 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		0E8085CE29B8449200504846 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
+		0E8085D029B8458100504846 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		0E8085D229B853CE00504846 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		0E8085D429B853FD00504846 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		0E8085D829B8548900504846 /* networkingResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = networkingResult.swift; sourceTree = "<group>"; };
+		0E8085DA29B854AD00504846 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		0E8085DC29B854D000504846 /* MoyaLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggingPlugin.swift; sourceTree = "<group>"; };
 		0EA9A17929B702C700EDB336 /* GPoject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPoject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EA9A17C29B702C700EDB336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EA9A17E29B702C700EDB336 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +119,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E8085CB29B8442100504846 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0E8085DC29B854D000504846 /* MoyaLoggingPlugin.swift */,
+				0E8085DA29B854AD00504846 /* Service.swift */,
+				0E8085D229B853CE00504846 /* Header.swift */,
+				0E8085D429B853FD00504846 /* TargetType.swift */,
+				0E8085D829B8548900504846 /* networkingResult.swift */,
+				0E8085D029B8458100504846 /* RequestModel.swift */,
+				0E8085CC29B8442F00504846 /* Api.swift */,
+				0E8085CE29B8449200504846 /* BaseURL.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		0EA9A17029B702C700EDB336 = {
 			isa = PBXGroup;
 			children = (
@@ -131,12 +162,13 @@
 				0EA9A17C29B702C700EDB336 /* AppDelegate.swift */,
 				0EA9A17E29B702C700EDB336 /* SceneDelegate.swift */,
 				0EA9A18029B702C700EDB336 /* ViewController.swift */,
-				0E8085BF29B754BD00504846 /* APExtension+UITableViewCell.swift */,
+				0E8085BF29B754BD00504846 /* Extension+UITableViewCell.swift */,
 				0E8085C129B754DE00504846 /* APGPTModel.swift */,
 				0E8085C329B754F500504846 /* APChatModel.swift */,
 				0E8085C529B7551600504846 /* CustomChatCell.swift */,
 				0E8085C729B7552D00504846 /* CustomChatCellLayout.swift */,
 				0E8085C929B7553E00504846 /* APChatViewController.swift */,
+				0E8085CB29B8442100504846 /* Networking */,
 				0EA9A18829B702C800EDB336 /* Assets.xcassets */,
 				0EA9A18A29B702C800EDB336 /* LaunchScreen.storyboard */,
 				0EA9A18D29B702C800EDB336 /* Info.plist */,
@@ -423,13 +455,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E8085DD29B854D000504846 /* MoyaLoggingPlugin.swift in Sources */,
+				0E8085D529B853FD00504846 /* TargetType.swift in Sources */,
+				0E8085CD29B8442F00504846 /* Api.swift in Sources */,
 				0E8085C229B754DE00504846 /* APGPTModel.swift in Sources */,
+				0E8085D129B8458100504846 /* RequestModel.swift in Sources */,
+				0E8085CF29B8449200504846 /* BaseURL.swift in Sources */,
 				0EA9A18729B702C700EDB336 /* GPoject.xcdatamodeld in Sources */,
-				0E8085C029B754BD00504846 /* APExtension+UITableViewCell.swift in Sources */,
+				0E8085C029B754BD00504846 /* Extension+UITableViewCell.swift in Sources */,
 				0E8085C429B754F500504846 /* APChatModel.swift in Sources */,
+				0E8085D929B8548900504846 /* networkingResult.swift in Sources */,
 				0EA9A18129B702C700EDB336 /* ViewController.swift in Sources */,
 				0E8085CA29B7553E00504846 /* APChatViewController.swift in Sources */,
+				0E8085DB29B854AD00504846 /* Service.swift in Sources */,
 				0E8085C629B7551600504846 /* CustomChatCell.swift in Sources */,
+				0E8085D329B853CE00504846 /* Header.swift in Sources */,
 				0EA9A17D29B702C700EDB336 /* AppDelegate.swift in Sources */,
 				0E8085C829B7552D00504846 /* CustomChatCellLayout.swift in Sources */,
 				0EA9A17F29B702C700EDB336 /* SceneDelegate.swift in Sources */,
