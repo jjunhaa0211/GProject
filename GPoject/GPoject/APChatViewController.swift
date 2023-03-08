@@ -1,4 +1,5 @@
 import UIKit
+import RxCocoa
 import SwiftyJSON
 import Alamofire
 import JGProgressHUD
@@ -6,6 +7,8 @@ import MessageKit
 import InputBarAccessoryView
 
 class APChatViewController: MessagesViewController, MessagesDataSource{
+    
+    let viewModel = GPTViewModel()
     
     let characterName: String = "정적인 새끼"
     
@@ -57,6 +60,27 @@ class APChatViewController: MessagesViewController, MessagesDataSource{
         messageInputBar.setLeftStackViewWidthConstant(to: 50, animated: false)
         messageInputBar.setStackViewItems([cameraItem], forStack: .left, animated: false) // 3
         messageInputBar.inputTextView.isImagePasteEnabled = false
+        
+        let model = "gpt-3.5-turbo"
+
+        let input = GPTViewModel.Input(model: Driver.just(model),
+                                        role: Driver.just("user"),
+                                        content: Driver.just("안녕하세요!"),
+                                       tossButtonDidTap: Signal.just(()))
+        
+        let output = viewModel.trans(input)
+        print(input)
+        print("shshs")
+        output.result.subscribe(onNext: {
+            switch $0 {
+            case true:
+                print("성공!")
+            case false:
+                print("실패했습니다.")
+                Token.accessToken = "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"
+                print(Token.accessToken!)
+            }
+        })
     }
     
     override func viewDidLayoutSubviews() {
