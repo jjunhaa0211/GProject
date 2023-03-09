@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E8085C029B754BD00504846 /* Extension+UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8085BF29B754BD00504846 /* Extension+UITableViewCell.swift */; };
+		0E8085C029B754BD00504846 /* UITableViewCell+ Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8085BF29B754BD00504846 /* UITableViewCell+ Extension.swift */; };
 		0E8085C229B754DE00504846 /* APGPTModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8085C129B754DE00504846 /* APGPTModel.swift */; };
 		0E8085C429B754F500504846 /* APChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8085C329B754F500504846 /* APChatModel.swift */; };
 		0E8085C629B7551600504846 /* CustomChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8085C529B7551600504846 /* CustomChatCell.swift */; };
@@ -66,7 +66,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E8085BF29B754BD00504846 /* Extension+UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableViewCell.swift"; sourceTree = "<group>"; };
+		0E8085BF29B754BD00504846 /* UITableViewCell+ Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ Extension.swift"; sourceTree = "<group>"; };
 		0E8085C129B754DE00504846 /* APGPTModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APGPTModel.swift; sourceTree = "<group>"; };
 		0E8085C329B754F500504846 /* APChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APChatModel.swift; sourceTree = "<group>"; };
 		0E8085C529B7551600504846 /* CustomChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomChatCell.swift; sourceTree = "<group>"; };
@@ -165,6 +165,7 @@
 			children = (
 				0E9ADE2929B8A2D800435E53 /* UIColor+Extension.swift */,
 				0E9ADE2B29B8A30900435E53 /* NSObject+Extension.swift */,
+				0E8085BF29B754BD00504846 /* UITableViewCell+ Extension.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -228,7 +229,6 @@
 				0EA9A17C29B702C700EDB336 /* AppDelegate.swift */,
 				0EA9A17E29B702C700EDB336 /* SceneDelegate.swift */,
 				0EA9A18029B702C700EDB336 /* ViewController.swift */,
-				0E8085BF29B754BD00504846 /* Extension+UITableViewCell.swift */,
 				0E8085C129B754DE00504846 /* APGPTModel.swift */,
 				0E8085C329B754F500504846 /* APChatModel.swift */,
 				0E8085C529B7551600504846 /* CustomChatCell.swift */,
@@ -540,7 +540,7 @@
 				0E9ADE2C29B8A30900435E53 /* NSObject+Extension.swift in Sources */,
 				0E8085CF29B8449200504846 /* BaseURL.swift in Sources */,
 				0EA9A18729B702C700EDB336 /* GPoject.xcdatamodeld in Sources */,
-				0E8085C029B754BD00504846 /* Extension+UITableViewCell.swift in Sources */,
+				0E8085C029B754BD00504846 /* UITableViewCell+ Extension.swift in Sources */,
 				0EDA5BC329B8841000D60E09 /* BaseVM.swift in Sources */,
 				0E8085C429B754F500504846 /* APChatModel.swift in Sources */,
 				0E9ADE2A29B8A2D800435E53 /* UIColor+Extension.swift in Sources */,

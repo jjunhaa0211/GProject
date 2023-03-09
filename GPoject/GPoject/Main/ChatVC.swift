@@ -53,10 +53,6 @@ class ChatVC: MessagesViewController {
         removeOutgoingMessageAvatars()
         addCameraBarButtonToMessageInputBar()
     }
-    
-//    deinit {
-//        navigationController?.navigationBar.prefersLargeTitles = true
-//    }
 
     private func confirmDelegates() {
         messagesCollectionView.messagesDataSource = self

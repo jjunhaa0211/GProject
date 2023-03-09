@@ -25,6 +25,7 @@ class ChannelTableViewCell: UITableViewCell {
     lazy var explanationLabel = UILabel().then {
         $0.textColor = .gray
         $0.text = "👊"
+        $0.font = .systemFont(ofSize: 13.0, weight: .thin)
     }
     
     lazy var detailButton = UIButton().then {
@@ -56,7 +57,7 @@ class ChannelTableViewCell: UITableViewCell {
         }
         
         nameLabel.snp.makeConstraints {
-            $0.top.equalTo(userImage.snp.top)
+            $0.top.equalTo(userImage.snp.top).offset(5.0)
             $0.leading.equalTo(userImage.snp.trailing).offset(10.0)
         }
         
