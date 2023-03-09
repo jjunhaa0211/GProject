@@ -31,6 +31,7 @@
 		0E9ADE4429B8A5D800435E53 /* MUessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ADE4329B8A5D800435E53 /* MUessage.swift */; };
 		0E9ADE4629B8A5E900435E53 /* ImageMediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ADE4529B8A5E900435E53 /* ImageMediaItem.swift */; };
 		0E9ADE4829B8A61100435E53 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ADE4729B8A61100435E53 /* Mocks.swift */; };
+		0E9ADE4B29B962F900435E53 /* BaseNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ADE4A29B962F900435E53 /* BaseNC.swift */; };
 		0EA9A17D29B702C700EDB336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9A17C29B702C700EDB336 /* AppDelegate.swift */; };
 		0EA9A17F29B702C700EDB336 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9A17E29B702C700EDB336 /* SceneDelegate.swift */; };
 		0EA9A18129B702C700EDB336 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9A18029B702C700EDB336 /* ViewController.swift */; };
@@ -89,6 +90,7 @@
 		0E9ADE4329B8A5D800435E53 /* MUessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUessage.swift; sourceTree = "<group>"; };
 		0E9ADE4529B8A5E900435E53 /* ImageMediaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMediaItem.swift; sourceTree = "<group>"; };
 		0E9ADE4729B8A61100435E53 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
+		0E9ADE4A29B962F900435E53 /* BaseNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNC.swift; sourceTree = "<group>"; };
 		0EA9A17929B702C700EDB336 /* GPoject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPoject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EA9A17C29B702C700EDB336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EA9A17E29B702C700EDB336 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -178,7 +180,6 @@
 		0E9ADE3C29B8A53600435E53 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				0E9ADE2729B8A2B600435E53 /* BaseViewController.swift */,
 				0E9ADE3D29B8A55300435E53 /* ChannelVC.swift */,
 				0E9ADE3F29B8A59300435E53 /* ChatVC.swift */,
 				0E9ADE4129B8A5C300435E53 /* Channel.swift */,
@@ -187,6 +188,16 @@
 				0E9ADE4729B8A61100435E53 /* Mocks.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		0E9ADE4929B962EE00435E53 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0EDA5BC229B8841000D60E09 /* BaseVM.swift */,
+				0E9ADE2729B8A2B600435E53 /* BaseViewController.swift */,
+				0E9ADE4A29B962F900435E53 /* BaseNC.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		0EA9A17029B702C700EDB336 = {
@@ -224,7 +235,7 @@
 				0E8085C729B7552D00504846 /* CustomChatCellLayout.swift */,
 				0E8085C929B7553E00504846 /* APChatViewController.swift */,
 				0EDA5BC029B883D100D60E09 /* GPTViewModel.swift */,
-				0EDA5BC229B8841000D60E09 /* BaseVM.swift */,
+				0E9ADE4929B962EE00435E53 /* Base */,
 				0E9ADE3C29B8A53600435E53 /* Main */,
 				0E9ADE2F29B8A37300435E53 /* Model */,
 				0E9ADE2229B8A16300435E53 /* ViewController */,
@@ -544,6 +555,7 @@
 				0E8085D329B853CE00504846 /* Header.swift in Sources */,
 				0EA9A17D29B702C700EDB336 /* AppDelegate.swift in Sources */,
 				0E8085C829B7552D00504846 /* CustomChatCellLayout.swift in Sources */,
+				0E9ADE4B29B962F900435E53 /* BaseNC.swift in Sources */,
 				0EA9A17F29B702C700EDB336 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

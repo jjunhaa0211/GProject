@@ -1,7 +1,7 @@
 import UIKit
 import SnapKit
 
-class ChannelVC: BaseViewController {
+class ChannelVC: BaseVC {
     lazy var channelTableView: UITableView = {
         let view = UITableView()
         view.register(ChannelTableViewCell.self, forCellReuseIdentifier: ChannelTableViewCell.className)
