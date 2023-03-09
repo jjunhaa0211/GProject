@@ -45,6 +45,7 @@
 		0EA9A19729B702C800EDB336 /* GPojectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9A19629B702C800EDB336 /* GPojectTests.swift */; };
 		0EA9A1A129B702C800EDB336 /* GPojectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9A1A029B702C800EDB336 /* GPojectUITests.swift */; };
 		0EA9A1A329B702C800EDB336 /* GPojectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9A1A229B702C800EDB336 /* GPojectUITestsLaunchTests.swift */; };
+		0EABDB1629B9E89E00AE81B7 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EABDB1529B9E89E00AE81B7 /* UIImageView+Extension.swift */; };
 		0EDA5BC129B883D100D60E09 /* GPTViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDA5BC029B883D100D60E09 /* GPTViewModel.swift */; };
 		0EDA5BC329B8841000D60E09 /* BaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDA5BC229B8841000D60E09 /* BaseVM.swift */; };
 		16F07DD2F840ED0028FEC226 /* Pods_GPoject_GPojectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B562E1D99A2F867060517C3 /* Pods_GPoject_GPojectUITests.framework */; };
@@ -112,6 +113,7 @@
 		0EA9A19C29B702C800EDB336 /* GPojectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPojectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EA9A1A029B702C800EDB336 /* GPojectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPojectUITests.swift; sourceTree = "<group>"; };
 		0EA9A1A229B702C800EDB336 /* GPojectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPojectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0EABDB1529B9E89E00AE81B7 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		0EDA5BC029B883D100D60E09 /* GPTViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTViewModel.swift; sourceTree = "<group>"; };
 		0EDA5BC229B8841000D60E09 /* BaseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVM.swift; sourceTree = "<group>"; };
 		1B67C9B62F63234E7440D877 /* Pods-GPojectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPojectTests.release.xcconfig"; path = "Target Support Files/Pods-GPojectTests/Pods-GPojectTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				0E9ADE2929B8A2D800435E53 /* UIColor+Extension.swift */,
+				0EABDB1529B9E89E00AE81B7 /* UIImageView+Extension.swift */,
 				0E9ADE2B29B8A30900435E53 /* NSObject+Extension.swift */,
 				0E8085BF29B754BD00504846 /* UITableViewCell+ Extension.swift */,
 			);
@@ -568,6 +571,7 @@
 				0E8085DB29B854AD00504846 /* Service.swift in Sources */,
 				0E8085C629B7551600504846 /* CustomChatCell.swift in Sources */,
 				0E9ADE4629B8A5E900435E53 /* ImageMediaItem.swift in Sources */,
+				0EABDB1629B9E89E00AE81B7 /* UIImageView+Extension.swift in Sources */,
 				0E8085D329B853CE00504846 /* Header.swift in Sources */,
 				0EA9A17D29B702C700EDB336 /* AppDelegate.swift in Sources */,
 				0E8085C829B7552D00504846 /* CustomChatCellLayout.swift in Sources */,

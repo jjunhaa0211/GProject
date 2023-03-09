@@ -15,7 +15,7 @@ import RxSwift
 class BaseIntroduction: BaseVC {
     
     internal lazy var userBackground = UIImageView().then {
-        $0.image = UIImage(named: "성화비행기")
+        $0.image = UIImage(named: "성화비행기")?.applyBlur_usingClamp(radius: 3.0)
     }
     
     internal lazy var outButton = UIButton().then {
