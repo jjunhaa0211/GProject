@@ -45,6 +45,7 @@ class ChatVC: MessagesViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.largeTitleDisplayMode = .never
         
         confirmDelegates()
         configure()
@@ -53,9 +54,9 @@ class ChatVC: MessagesViewController {
         addCameraBarButtonToMessageInputBar()
     }
     
-    deinit {
-        navigationController?.navigationBar.prefersLargeTitles = true
-    }
+//    deinit {
+//        navigationController?.navigationBar.prefersLargeTitles = true
+//    }
 
     private func confirmDelegates() {
         messagesCollectionView.messagesDataSource = self
@@ -67,7 +68,6 @@ class ChatVC: MessagesViewController {
     
     private func configure() {
         title = channel.name
-        navigationController?.navigationBar.prefersLargeTitles = false
         messages = getMessagesMock()
     }
     

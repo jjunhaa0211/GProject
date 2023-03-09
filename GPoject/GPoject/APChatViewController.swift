@@ -41,6 +41,8 @@ class APChatViewController: MessagesViewController, MessagesDataSource{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.largeTitleDisplayMode = .never
         // Do any additional setup after loading the view.
         messagesCollectionView = MessagesCollectionView(frame: .zero, collectionViewLayout: CustomMessagesFlowLayout())
         messagesCollectionView.register(CustomChatCell.self)
