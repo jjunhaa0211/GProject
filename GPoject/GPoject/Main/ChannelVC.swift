@@ -26,7 +26,7 @@ class ChannelVC: BaseVC {
         channelTableView.separatorStyle = .none
     }
     
-    private func configure() {
+    internal override func configure() {
         view.addSubview(channelTableView)
         channelTableView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
