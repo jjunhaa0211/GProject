@@ -94,9 +94,7 @@ extension Date {
         let myString = formatter.string(from: self) // 추가되는 문자열
         // 문자열 날짜로 변환
         let yourDate = formatter.date(from: myString)
-        //then again set the date format whhich type of output you need
         formatter.dateFormat = "dd-MM-yyyy HH:mm:ss"
-        // again convert your date to string
         let myStringafd = formatter.string(from: yourDate!)
         
         let dateFormatter = DateFormatter()

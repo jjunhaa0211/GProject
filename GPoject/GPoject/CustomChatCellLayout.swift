@@ -22,8 +22,6 @@ open class CustomMessagesFlowLayout: MessagesCollectionViewFlowLayout {
     
     open override func messageSizeCalculators() -> [MessageSizeCalculator] {
         var superCalculators = super.messageSizeCalculators()
-        // Append any of your custom `MessageSizeCalculator` if you wish for the convenience
-        // functions to work such as `setMessageIncoming...` or `setMessageOutgoing...`
         superCalculators.append(customMessageSizeCalculator)
         return superCalculators
     }

@@ -24,19 +24,19 @@ class ChatVC: MessagesViewController {
     var sender = Sender(senderId: "any_unique_id", displayName: "jake")
     var messages = [MUessage]()
     private var isSendingPhoto = false {
-      didSet {
-        messageInputBar.leftStackViewItems.forEach { item in
-          guard let item = item as? InputBarButtonItem else {
-            return
-          }
-          item.isEnabled = !self.isSendingPhoto
+        didSet {
+            messageInputBar.leftStackViewItems.forEach { item in
+                guard let item = item as? InputBarButtonItem else {
+                    return
+                }
+                item.isEnabled = !self.isSendingPhoto
+            }
         }
-      }
     }
     
     init(channel: Channel) {
-      self.channel = channel
-      super.init(nibName: nil, bundle: nil)
+        self.channel = channel
+        super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder: NSCoder) {
@@ -45,7 +45,7 @@ class ChatVC: MessagesViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.largeTitleDisplayMode = .never
+//        navigationItem.largeTitleDisplayMode = .never
         
         confirmDelegates()
         configure()
@@ -53,7 +53,7 @@ class ChatVC: MessagesViewController {
         removeOutgoingMessageAvatars()
         addCameraBarButtonToMessageInputBar()
     }
-
+    
     private func confirmDelegates() {
         messagesCollectionView.messagesDataSource = self
         messagesCollectionView.messagesLayoutDelegate = self
@@ -162,7 +162,7 @@ extension ChatVC: InputBarAccessoryViewDelegate {
         let message = MUessage(content: text)
         
         // TODO
-//        saveMessageAndScrollToLastItem(message)
+        //        saveMessageAndScrollToLastItem(message)
         
         insertNewMessage(message)
         inputBar.inputTextView.text.removeAll()
@@ -176,9 +176,9 @@ extension ChatVC: UIImagePickerControllerDelegate, UINavigationControllerDelegat
         if let asset = info[.phAsset] as? PHAsset {
             let imageSize = CGSize(width: 500, height: 500)
             PHImageManager.default().requestImage(for: asset,
-                                                     targetSize: imageSize,
-                                                     contentMode: .aspectFit,
-                                                     options: nil) { image, _ in
+                                                  targetSize: imageSize,
+                                                  contentMode: .aspectFit,
+                                                  options: nil) { image, _ in
                 guard let image = image else { return }
                 self.sendPhoto(image)
             }

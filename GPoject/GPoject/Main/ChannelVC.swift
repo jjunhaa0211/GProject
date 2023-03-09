@@ -11,6 +11,12 @@ class ChannelVC: BaseVC {
         return view
     }()
     
+    lazy var navLabel = UILabel().then {
+        $0.textColor = UIColor.black
+        $0.text = "친구들";
+        $0.font = .systemFont(ofSize: 25.0, weight: .bold)
+    }
+    
     var channels = [Channel]()
     
     override func viewDidLoad() {
@@ -26,8 +32,10 @@ class ChannelVC: BaseVC {
             make.edges.equalToSuperview()
         }
         
-        navigationController?.navigationBar.prefersLargeTitles = true // nav 크게 하기
-        title = "채팅"
+//        navigationController?.navigationBar.prefersLargeTitles = true // nav 크게 하기
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: navLabel)
+        self.navigationItem.leftItemsSupplementBackButton = true
+//        title = "친구들"
         channels = getChannelMocks()
     }
     
@@ -63,14 +71,15 @@ extension ChannelVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let channel = channels[indexPath.row]
+//        let channel = channels[indexPath.row]
+//
+//        if indexPath.row == 0 {
+//            let vc = APChatViewController()
+//            navigationController?.pushViewController(vc, animated: true)
+//        } else {
+//            let viewController = ChatVC(channel: channel)
+//            navigationController?.pushViewController(viewController, animated: true)
+//        }
         
-        if indexPath.row == 0 {
-            let vc = APChatViewController()
-            navigationController?.pushViewController(vc, animated: true)
-        } else {
-            let viewController = ChatVC(channel: channel)
-            navigationController?.pushViewController(viewController, animated: true)
-        }
     }
 }

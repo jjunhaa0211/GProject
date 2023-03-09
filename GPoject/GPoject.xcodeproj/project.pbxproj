@@ -21,7 +21,7 @@
 		0E8085D929B8548900504846 /* networkingResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8085D829B8548900504846 /* networkingResult.swift */; };
 		0E8085DB29B854AD00504846 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8085DA29B854AD00504846 /* Service.swift */; };
 		0E8085DD29B854D000504846 /* MoyaLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8085DC29B854D000504846 /* MoyaLoggingPlugin.swift */; };
-		0E9ADE2829B8A2B600435E53 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ADE2729B8A2B600435E53 /* BaseViewController.swift */; };
+		0E9ADE2829B8A2B600435E53 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ADE2729B8A2B600435E53 /* BaseVC.swift */; };
 		0E9ADE2A29B8A2D800435E53 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ADE2929B8A2D800435E53 /* UIColor+Extension.swift */; };
 		0E9ADE2C29B8A30900435E53 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ADE2B29B8A30900435E53 /* NSObject+Extension.swift */; };
 		0E9ADE3929B8A3FF00435E53 /* ChannelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ADE3829B8A3FF00435E53 /* ChannelTableViewCell.swift */; };
@@ -32,6 +32,10 @@
 		0E9ADE4629B8A5E900435E53 /* ImageMediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ADE4529B8A5E900435E53 /* ImageMediaItem.swift */; };
 		0E9ADE4829B8A61100435E53 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ADE4729B8A61100435E53 /* Mocks.swift */; };
 		0E9ADE4B29B962F900435E53 /* BaseNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ADE4A29B962F900435E53 /* BaseNC.swift */; };
+		0E9ADE4D29B9B34400435E53 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ADE4C29B9B34400435E53 /* TabBarViewController.swift */; };
+		0E9ADE4F29B9B3FC00435E53 /* ChattingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ADE4E29B9B3FC00435E53 /* ChattingViewController.swift */; };
+		0E9ADE5129B9B44200435E53 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ADE5029B9B44200435E53 /* UserViewController.swift */; };
+		0E9ADE5329B9BE2500435E53 /* BaseIntroduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ADE5229B9BE2500435E53 /* BaseIntroduction.swift */; };
 		0EA9A17D29B702C700EDB336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9A17C29B702C700EDB336 /* AppDelegate.swift */; };
 		0EA9A17F29B702C700EDB336 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9A17E29B702C700EDB336 /* SceneDelegate.swift */; };
 		0EA9A18129B702C700EDB336 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9A18029B702C700EDB336 /* ViewController.swift */; };
@@ -80,7 +84,7 @@
 		0E8085D829B8548900504846 /* networkingResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = networkingResult.swift; sourceTree = "<group>"; };
 		0E8085DA29B854AD00504846 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		0E8085DC29B854D000504846 /* MoyaLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggingPlugin.swift; sourceTree = "<group>"; };
-		0E9ADE2729B8A2B600435E53 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0E9ADE2729B8A2B600435E53 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		0E9ADE2929B8A2D800435E53 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		0E9ADE2B29B8A30900435E53 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		0E9ADE3829B8A3FF00435E53 /* ChannelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableViewCell.swift; sourceTree = "<group>"; };
@@ -91,6 +95,10 @@
 		0E9ADE4529B8A5E900435E53 /* ImageMediaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMediaItem.swift; sourceTree = "<group>"; };
 		0E9ADE4729B8A61100435E53 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
 		0E9ADE4A29B962F900435E53 /* BaseNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNC.swift; sourceTree = "<group>"; };
+		0E9ADE4C29B9B34400435E53 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		0E9ADE4E29B9B3FC00435E53 /* ChattingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingViewController.swift; sourceTree = "<group>"; };
+		0E9ADE5029B9B44200435E53 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		0E9ADE5229B9BE2500435E53 /* BaseIntroduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseIntroduction.swift; sourceTree = "<group>"; };
 		0EA9A17929B702C700EDB336 /* GPoject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPoject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EA9A17C29B702C700EDB336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EA9A17E29B702C700EDB336 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +195,7 @@
 				0E9ADE4329B8A5D800435E53 /* MUessage.swift */,
 				0E9ADE4529B8A5E900435E53 /* ImageMediaItem.swift */,
 				0E9ADE4729B8A61100435E53 /* Mocks.swift */,
+				0E9ADE5229B9BE2500435E53 /* BaseIntroduction.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -195,7 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				0EDA5BC229B8841000D60E09 /* BaseVM.swift */,
-				0E9ADE2729B8A2B600435E53 /* BaseViewController.swift */,
+				0E9ADE2729B8A2B600435E53 /* BaseVC.swift */,
 				0E9ADE4A29B962F900435E53 /* BaseNC.swift */,
 			);
 			path = Base;
@@ -235,6 +244,9 @@
 				0E8085C729B7552D00504846 /* CustomChatCellLayout.swift */,
 				0E8085C929B7553E00504846 /* APChatViewController.swift */,
 				0EDA5BC029B883D100D60E09 /* GPTViewModel.swift */,
+				0E9ADE4C29B9B34400435E53 /* TabBarViewController.swift */,
+				0E9ADE5029B9B44200435E53 /* UserViewController.swift */,
+				0E9ADE4E29B9B3FC00435E53 /* ChattingViewController.swift */,
 				0E9ADE4929B962EE00435E53 /* Base */,
 				0E9ADE3C29B8A53600435E53 /* Main */,
 				0E9ADE2F29B8A37300435E53 /* Model */,
@@ -526,16 +538,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E9ADE4D29B9B34400435E53 /* TabBarViewController.swift in Sources */,
 				0E9ADE3E29B8A55300435E53 /* ChannelVC.swift in Sources */,
 				0E8085DD29B854D000504846 /* MoyaLoggingPlugin.swift in Sources */,
 				0E8085D529B853FD00504846 /* TargetType.swift in Sources */,
 				0EDA5BC129B883D100D60E09 /* GPTViewModel.swift in Sources */,
+				0E9ADE5129B9B44200435E53 /* UserViewController.swift in Sources */,
 				0E9ADE4829B8A61100435E53 /* Mocks.swift in Sources */,
-				0E9ADE2829B8A2B600435E53 /* BaseViewController.swift in Sources */,
+				0E9ADE2829B8A2B600435E53 /* BaseVC.swift in Sources */,
 				0E8085CD29B8442F00504846 /* Api.swift in Sources */,
 				0E8085C229B754DE00504846 /* APGPTModel.swift in Sources */,
+				0E9ADE4F29B9B3FC00435E53 /* ChattingViewController.swift in Sources */,
 				0E9ADE3929B8A3FF00435E53 /* ChannelTableViewCell.swift in Sources */,
 				0E8085D129B8458100504846 /* RequestModel.swift in Sources */,
+				0E9ADE5329B9BE2500435E53 /* BaseIntroduction.swift in Sources */,
 				0E9ADE4429B8A5D800435E53 /* MUessage.swift in Sources */,
 				0E9ADE2C29B8A30900435E53 /* NSObject+Extension.swift in Sources */,
 				0E8085CF29B8449200504846 /* BaseURL.swift in Sources */,
