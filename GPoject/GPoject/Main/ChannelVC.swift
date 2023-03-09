@@ -41,7 +41,7 @@ extension ChannelVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ChannelTableViewCell.className, for: indexPath) as! ChannelTableViewCell
         
-        
+        cell.selectionStyle = .none
         if indexPath.row == 0 {
             cell.userImage.image = UIImage(named: "둥이")
             cell.nameLabel.text = "정적인 세끼"
