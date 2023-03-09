@@ -17,6 +17,7 @@ class ChannelVC: BaseViewController {
         super.viewDidLoad()
         
         configure()
+        channelTableView.separatorStyle = .none
     }
     
     private func configure() {
@@ -25,6 +26,7 @@ class ChannelVC: BaseViewController {
             make.edges.equalToSuperview()
         }
         
+        navigationController?.navigationBar.prefersLargeTitles = true // nav 크게 하기
         title = "채팅"
         channels = getChannelMocks()
     }
@@ -33,12 +35,20 @@ class ChannelVC: BaseViewController {
 
 extension ChannelVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return channels.count
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ChannelTableViewCell.className, for: indexPath) as! ChannelTableViewCell
-        cell.chatRoomLabel.text = channels[indexPath.row].name
+        
+        
+        if indexPath.row == 0 {
+            cell.userImage.image = UIImage(named: "둥이")
+            cell.nameLabel.text = "정적인 세끼"
+        } else {
+            cell.userImage.image = UIImage(named: "노랑이")
+            cell.nameLabel.text = "알 수 없음"
+        }
         return cell
     }
     

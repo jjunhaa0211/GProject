@@ -7,20 +7,30 @@
 
 import UIKit
 import SnapKit
+import Then
 
 class ChannelTableViewCell: UITableViewCell {
-    lazy var chatRoomLabel: UILabel = {
-        let label = UILabel()
-        label.textColor = .primary
-        return label
-    }()
     
-    lazy var detailButton: UIButton = {
-        let button = UIButton()
-        button.setImage(UIImage(systemName: "chevron.right"), for: .normal)
-        button.isUserInteractionEnabled = false
-        return button
-    }()
+    lazy var userImage = UIImageView().then {
+        $0.backgroundColor = .black
+        $0.layer.cornerRadius = 25.0
+    }
+    
+    lazy var nameLabel = UILabel().then {
+        $0.textColor = .black
+        $0.text = "정적인 세끼"
+        $0.font = .systemFont(ofSize: 15.0, weight: .thin)
+    }
+    
+    lazy var explanationLabel = UILabel().then {
+        $0.textColor = .gray
+        $0.text = "👊"
+    }
+    
+    lazy var detailButton = UIButton().then {
+        $0.setImage(UIImage(systemName: "chevron.right"), for: .normal)
+        $0.isUserInteractionEnabled = false
+    }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -33,14 +43,33 @@ class ChannelTableViewCell: UITableViewCell {
     }
     
     private func configure() {
-        contentView.addSubview(chatRoomLabel)
+        contentView.addSubview(userImage)
+        contentView.addSubview(nameLabel)
+        contentView.addSubview(explanationLabel)
         contentView.addSubview(detailButton)
         
-        chatRoomLabel.snp.makeConstraints { make in
-            make.leading.equalToSuperview().offset(24)
-            make.centerY.equalToSuperview()
-            make.trailing.lessThanOrEqualTo(detailButton).offset(-24)
+        userImage.snp.makeConstraints {
+            $0.leading.equalToSuperview().offset(24.0)
+            $0.centerY.equalToSuperview()
+            $0.trailing.lessThanOrEqualTo(detailButton).offset(-24)
+            $0.height.width.equalTo(50.0)
         }
+        
+        nameLabel.snp.makeConstraints {
+            $0.top.equalTo(userImage.snp.top)
+            $0.leading.equalTo(userImage.snp.trailing).offset(10.0)
+        }
+        
+        explanationLabel.snp.makeConstraints {
+            $0.top.equalTo(nameLabel.snp.bottom).offset(5.0)
+            $0.leading.equalTo(nameLabel.snp.leading)
+        }
+        
+//        chatRoomLabel.snp.makeConstraints { make in
+//            make.leading.equalToSuperview().offset(24)
+//            make.centerY.equalToSuperview()
+//            make.trailing.lessThanOrEqualTo(detailButton).offset(-24)
+//        }
         
         detailButton.setContentHuggingPriority(.defaultHigh, for: .horizontal)
         detailButton.snp.makeConstraints { make in
