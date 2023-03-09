@@ -14,8 +14,13 @@ import RxSwift
 
 class BaseIntroduction: BaseVC {
     
+    static var USER_IMAGE: String = "유저 이름"
+    static var USER_BACKGROUND: String = "성화비행기"
+    static var USER_NAME: String = "알 수 잆음"
+    static var USER_INTRODUCTION: String = "설명이 없음"
+    
     internal lazy var userBackground = UIImageView().then {
-        $0.image = UIImage(named: "성화비행기")?.applyBlur_usingClamp(radius: 3.0)
+        $0.image = UIImage(named: "\(BaseIntroduction.USER_BACKGROUND)")?.applyBlur_usingClamp(radius: 3.0)
     }
     
     internal lazy var outButton = UIButton().then {
@@ -23,6 +28,7 @@ class BaseIntroduction: BaseVC {
         $0.rx.tap
             .bind {
                 print("나가기 버튼 클릭")
+                self.dismiss(animated: true)
             }
     }
     
@@ -32,13 +38,14 @@ class BaseIntroduction: BaseVC {
     }
     
     internal lazy var userName = UILabel().then {
-        $0.text = "유저 이름"
+        $0.text = BaseIntroduction.USER_NAME
         $0.textColor = .white
         $0.font = .systemFont(ofSize: 25.0, weight: .bold)
     }
     
     internal lazy var userIntroduction = UILabel().then {
-        $0.text = "最後まで, 頑張ってね"
+//        $0.text = "最後まで, 頑張ってね"
+        $0.text = BaseIntroduction.USER_INTRODUCTION
         $0.textColor = .white
         $0.font = .systemFont(ofSize: 15.0, weight: .bold)
     }
@@ -52,6 +59,7 @@ class BaseIntroduction: BaseVC {
     }
     
     internal lazy var facebookButton = UIButton().then {
+        $0.setImage(UIImage(named: "facebook-icon"), for: .normal)
         $0.backgroundColor = .green
     }
     

@@ -82,5 +82,10 @@ extension ChannelVC: UITableViewDataSource, UITableViewDelegate {
 //            navigationController?.pushViewController(viewController, animated: true)
 //        }
         
+        if indexPath.row == 0 {
+            let viewController = UINavigationController(rootViewController: BaseIntroduction())
+                    viewController.modalPresentationStyle = .fullScreen
+                    self.present(viewController, animated: true)
+        }
     }
 }
