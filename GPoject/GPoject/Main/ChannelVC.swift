@@ -3,14 +3,11 @@ import SnapKit
 
 class ChannelVC: BaseVC {
     
-    lazy var channelTableView: UITableView = {
-        let view = UITableView()
-        view.register(ChannelTableViewCell.self, forCellReuseIdentifier: ChannelTableViewCell.className)
-        view.delegate = self
-        view.dataSource = self
-        
-        return view
-    }()
+    lazy var channelTableView = UITableView().then {
+        $0.register(ChannelTableViewCell.self, forCellReuseIdentifier: ChannelTableViewCell.className)
+        $0.delegate = self
+        $0.dataSource = self
+    }
     
     lazy var navLabel = UILabel().then {
         $0.textColor = UIColor.black
@@ -32,11 +29,8 @@ class ChannelVC: BaseVC {
         channelTableView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
-        
-//        navigationController?.navigationBar.prefersLargeTitles = true // nav 크게 하기
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: navLabel)
         self.navigationItem.leftItemsSupplementBackButton = true
-//        title = "친구들"
         channels = getChannelMocks()
     }
     
@@ -51,20 +45,28 @@ extension ChannelVC: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: ChannelTableViewCell.className, for: indexPath) as! ChannelTableViewCell
         
         cell.selectionStyle = .none
-        if indexPath.row == 0 {
+        switch indexPath.row {
+        case 0:
             cell.userImage.image = UIImage(named: "둥이")
             cell.nameLabel.text = "정적인 세끼"
-        }
-        else if indexPath.row == 1 {
+            return cell
+        case 1:
             cell.userImage.image = UIImage(named: "성화아이시크림")
             cell.nameLabel.text = "문성화"
             cell.explanationLabel.text = "最後まで, 頑張ってね"
-        } else if indexPath.row == 2 {
+            return cell
+        case 2:
             cell.userImage.image = UIImage(named: "양")
             cell.nameLabel.text = "양지은"
             cell.explanationLabel.text = "V🚬V"
+            return cell
+            
+        default:
+            cell.userImage.image = UIImage(named: "")
+            cell.nameLabel.text = "사용자가 없습니다"
+            cell.explanationLabel.text = "아무것도 없습니다."
+            return cell
         }
-        return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
