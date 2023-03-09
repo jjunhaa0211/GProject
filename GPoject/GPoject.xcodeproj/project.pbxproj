@@ -98,7 +98,7 @@
 		0E9ADE4C29B9B34400435E53 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		0E9ADE4E29B9B3FC00435E53 /* ChattingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingViewController.swift; sourceTree = "<group>"; };
 		0E9ADE5029B9B44200435E53 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
-		0E9ADE5229B9BE2500435E53 /* BaseIntroduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseIntroduction.swift; sourceTree = "<group>"; };
+		0E9ADE5229B9BE2500435E53 /* BaseIntroduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseIntroduction.swift; path = ../Main/BaseIntroduction.swift; sourceTree = "<group>"; };
 		0EA9A17929B702C700EDB336 /* GPoject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPoject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EA9A17C29B702C700EDB336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EA9A17E29B702C700EDB336 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -195,7 +195,6 @@
 				0E9ADE4329B8A5D800435E53 /* MUessage.swift */,
 				0E9ADE4529B8A5E900435E53 /* ImageMediaItem.swift */,
 				0E9ADE4729B8A61100435E53 /* Mocks.swift */,
-				0E9ADE5229B9BE2500435E53 /* BaseIntroduction.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -205,6 +204,7 @@
 			children = (
 				0EDA5BC229B8841000D60E09 /* BaseVM.swift */,
 				0E9ADE2729B8A2B600435E53 /* BaseVC.swift */,
+				0E9ADE5229B9BE2500435E53 /* BaseIntroduction.swift */,
 				0E9ADE4A29B962F900435E53 /* BaseNC.swift */,
 			);
 			path = Base;
