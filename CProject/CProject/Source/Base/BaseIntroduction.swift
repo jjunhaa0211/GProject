@@ -28,19 +28,25 @@ class BaseIntroduction: BaseVC {
     }
     
     internal lazy var chattingButton = UIButton().then {
-        $0.backgroundColor = .yellow
+        $0.backgroundColor = .gray
     }
     
     internal lazy var instagramButton = UIButton().then {
-        $0.backgroundColor = .red
+        let image = UIImage(named: "instagram-icon")
+        $0.setBackgroundImage(image, for: UIControl.State.normal)
     }
     
     internal lazy var facebookButton = UIButton().then {
-        $0.backgroundColor = .blue
+        let image = UIImage(named: "facebook-icon")
+        $0.setBackgroundImage(image, for: UIControl.State.normal)
     }
     
     internal lazy var viewLine = UIButton().then {
         $0.backgroundColor = .separator
+    }
+    
+    internal lazy var outButton = UIButton().then {
+        $0.backgroundColor = .red
     }
     
     let contentStackView = UIStackView().then {
@@ -50,6 +56,31 @@ class BaseIntroduction: BaseVC {
         $0.spacing = 50
     }
     
+    override func touchEvent() {
+        super.touchEvent()
+        
+        outButton.rx.tap
+            .bind {
+                print("나가기")
+                self.dismiss(animated: true)
+            }
+        
+        chattingButton.rx.tap
+            .bind {
+                print("채팅하러 가기")
+            }
+        
+        instagramButton.rx.tap
+            .bind {
+                print("인스타 버튼 클릭")
+            }
+        
+        facebookButton.rx.tap
+            .bind {
+                print("페이스북 버튼 클릭")
+            }
+    }
+    
     override func layout() {
         view.addSubview(userBackground)
         view.addSubview(userProfile)
@@ -57,6 +88,7 @@ class BaseIntroduction: BaseVC {
         view.addSubview(userIntroduction)
         view.addSubview(contentStackView)
         view.addSubview(viewLine)
+        view.addSubview(outButton)
         
         userBackground.snp.makeConstraints {
             $0.edges.equalToSuperview()
@@ -103,6 +135,12 @@ class BaseIntroduction: BaseVC {
         contentStackView.snp.makeConstraints {
             $0.top.equalTo(viewLine.snp.bottom).offset(30.0)
             $0.centerX.equalToSuperview()
+        }
+        
+        outButton.snp.makeConstraints {
+            $0.width.height.equalTo(50.0)
+            $0.top.equalToSuperview().offset(60.0)
+            $0.leading.equalToSuperview().inset(30.0)
         }
     }
 }
