@@ -46,7 +46,8 @@ class BaseIntroduction: BaseVC {
     }
     
     internal lazy var outButton = UIButton().then {
-        $0.backgroundColor = .red
+        let image = UIImage(named: "close-icon")
+        $0.setBackgroundImage(image, for: UIControl.State.normal)
     }
     
     let contentStackView = UIStackView().then {
@@ -138,7 +139,7 @@ class BaseIntroduction: BaseVC {
         }
         
         outButton.snp.makeConstraints {
-            $0.width.height.equalTo(50.0)
+            $0.width.height.equalTo(30.0)
             $0.top.equalToSuperview().offset(60.0)
             $0.leading.equalToSuperview().inset(30.0)
         }
