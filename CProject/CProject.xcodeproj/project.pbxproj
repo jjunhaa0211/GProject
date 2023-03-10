@@ -117,13 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				0E6D5F9D29BAB3C400B0AF99 /* Resource */,
-				0E6D5F6A29BAB2F400B0AF99 /* AppDelegate.swift */,
-				0E6D5F6C29BAB2F400B0AF99 /* SceneDelegate.swift */,
-				0E6D5F6E29BAB2F400B0AF99 /* ViewController.swift */,
-				0E6D5F7629BAB2F500B0AF99 /* Assets.xcassets */,
-				0E6D5F7829BAB2F500B0AF99 /* LaunchScreen.storyboard */,
-				0E6D5F7B29BAB2F500B0AF99 /* Info.plist */,
-				0E6D5F7329BAB2F400B0AF99 /* CProject.xcdatamodeld */,
+				0E6D5FA229BAB51F00B0AF99 /* Source */,
 			);
 			path = CProject;
 			sourceTree = "<group>";
@@ -148,6 +142,7 @@
 		0E6D5F9D29BAB3C400B0AF99 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				0E6D5F9F29BAB45400B0AF99 /* Suppoting Files */,
 				0E6D5F9E29BAB3D000B0AF99 /* Storyboard */,
 			);
 			path = Resource;
@@ -156,8 +151,61 @@
 		0E6D5F9E29BAB3D000B0AF99 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				0E6D5F7829BAB2F500B0AF99 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		0E6D5F9F29BAB45400B0AF99 /* Suppoting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E6D5F6A29BAB2F400B0AF99 /* AppDelegate.swift */,
+				0E6D5F6C29BAB2F400B0AF99 /* SceneDelegate.swift */,
+				0E6D5F7629BAB2F500B0AF99 /* Assets.xcassets */,
+				0E6D5F7329BAB2F400B0AF99 /* CProject.xcdatamodeld */,
+				0E6D5F7B29BAB2F500B0AF99 /* Info.plist */,
+			);
+			path = "Suppoting Files";
+			sourceTree = "<group>";
+		};
+		0E6D5FA229BAB51F00B0AF99 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0E6D5FA629BAB55800B0AF99 /* Networking */,
+				0E6D5FA529BAB54400B0AF99 /* Base */,
+				0E6D5FA429BAB53700B0AF99 /* ViewController */,
+				0E6D5FA329BAB52E00B0AF99 /* Extensions */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		0E6D5FA329BAB52E00B0AF99 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0E6D5FA429BAB53700B0AF99 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0E6D5F6E29BAB2F400B0AF99 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0E6D5FA529BAB54400B0AF99 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0E6D5FA629BAB55800B0AF99 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		80DE7D352A07EBEAF6F0A033 /* Frameworks */ = {
@@ -596,7 +644,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 92YDTRVDUA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CProject/Info.plist;
+				INFOPLIST_FILE = "/Users/junha/Desktop/GProject/CProject/CProject/Resource/Suppoting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -625,7 +673,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 92YDTRVDUA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CProject/Info.plist;
+				INFOPLIST_FILE = "/Users/junha/Desktop/GProject/CProject/CProject/Resource/Suppoting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
