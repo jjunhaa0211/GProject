@@ -1,0 +1,6 @@
+framework module Pods_GPojectTests {
+  umbrella header "Pods-GPojectTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

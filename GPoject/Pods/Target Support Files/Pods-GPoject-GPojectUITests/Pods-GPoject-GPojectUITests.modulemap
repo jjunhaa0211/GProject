@@ -1,0 +1,6 @@
+framework module Pods_GPoject_GPojectUITests {
+  umbrella header "Pods-GPoject-GPojectUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
