@@ -155,7 +155,7 @@ extension ChatVC: InputBarAccessoryViewDelegate {
         let message = MUessage(content: text)
         
         // TODO
-        //        saveMessageAndScrollToLastItem(message)
+//                saveMessageAndScrollToLastItem(message)
         
         insertNewMessage(message)
         inputBar.inputTextView.text.removeAll()
