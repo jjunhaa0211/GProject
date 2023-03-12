@@ -210,7 +210,7 @@ class APChatViewController: MessagesViewController, MessagesDataSource{
     
     func getResponse(with text: String, completion: @escaping(JSON?, Error?) -> Void){
 
-        let url =  "https://api.openai.com/v1/chat/completions"
+        let url =  "ENTER YOUR API HERE"
         let parameters = ["prompt": text] as [String : Any]
         
         DispatchQueue.main.async {

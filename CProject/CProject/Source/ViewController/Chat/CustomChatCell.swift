@@ -36,5 +36,4 @@ open class CustomChatCell: UICollectionViewCell {
             break
         }
     }
-    
 }

@@ -15,14 +15,14 @@ class BaseIntroduction: BaseVC {
     
     internal lazy var userName = UILabel().then {
         $0.text = "문성화"
-        $0.font = .systemFont(ofSize: 30, weight: .bold)
+        $0.font = .systemFont(ofSize: 25, weight: .bold)
         $0.numberOfLines = 1
         $0.textColor = .white
     }
     
     internal lazy var userIntroduction = UILabel().then {
         $0.text = "最後まで, 頑張ってね"
-        $0.font = .systemFont(ofSize: 20, weight: .bold)
+        $0.font = .systemFont(ofSize: 18, weight: .semibold)
         $0.numberOfLines = 1
         $0.textColor = .white
     }
@@ -54,7 +54,7 @@ class BaseIntroduction: BaseVC {
         $0.axis = .horizontal
         $0.alignment = .center
         $0.distribution = .equalCentering
-        $0.spacing = 50
+        $0.spacing = 70
     }
     
     override func touchEvent() {
@@ -83,13 +83,15 @@ class BaseIntroduction: BaseVC {
     }
     
     override func layout() {
-        view.addSubview(userBackground)
-        view.addSubview(userProfile)
-        view.addSubview(userName)
-        view.addSubview(userIntroduction)
-        view.addSubview(contentStackView)
-        view.addSubview(viewLine)
-        view.addSubview(outButton)
+        [
+            userBackground,
+            userProfile,
+            userName,
+            userIntroduction,
+            contentStackView,
+            viewLine,
+            outButton
+        ].forEach { view.addSubview($0) }
         
         userBackground.snp.makeConstraints {
             $0.edges.equalToSuperview()
@@ -98,7 +100,7 @@ class BaseIntroduction: BaseVC {
         userProfile.snp.makeConstraints {
             $0.centerY.equalToSuperview().offset(100.0)
             $0.centerX.equalToSuperview()
-            $0.height.width.equalTo(160.0)
+            $0.height.width.equalTo(120.0)
         }
         
         userName.snp.makeConstraints {
