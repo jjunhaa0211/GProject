@@ -71,7 +71,7 @@ class ProfileViewController: UIViewController {
         $0.minimumLineSpacing = 10
         $0.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
     }).then {
-        $0.backgroundColor = .white
+        $0.backgroundColor = .blue
         $0.register(FriendCell.self, forCellWithReuseIdentifier: "FriendCell")
     }
     
@@ -114,7 +114,7 @@ class ProfileViewController: UIViewController {
         badgeCollectionView.delegate = self
         
         
-        view.backgroundColor = .red
+        view.backgroundColor = .black
         
         view.addSubview(profileImageView)
         view.addSubview(nameLabel)
@@ -193,6 +193,7 @@ class FriendCell: UICollectionViewCell {
         $0.contentMode = .scaleAspectFill
         $0.layer.cornerRadius = 25
         $0.layer.masksToBounds = true
+        $0.backgroundColor = .white
         $0.image = UIImage(named: "friend_image")
     }
     
@@ -212,20 +213,17 @@ class FriendCell: UICollectionViewCell {
 
 class BadgeCell: UICollectionViewCell {
     // badge cell 내부에 표시될 titleLabel과 imageView
-    let titleLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 12)
-        label.textColor = .black
-        label.textAlignment = .center
-        return label
-    }()
+    let titleLabel = UILabel().then {
+        $0.font = UIFont.systemFont(ofSize: 12)
+        $0.textColor = .white
+        $0.textAlignment = .center
+    }
     
-    let imageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
-        imageView.clipsToBounds = true
-        return imageView
-    }()
+    let imageView = UIImageView().then {
+        $0.backgroundColor = .white
+        $0.contentMode = .scaleAspectFit
+        $0.clipsToBounds = true
+    }
     
     // configure 메서드 추가
     func configure(badge: Badge) {
