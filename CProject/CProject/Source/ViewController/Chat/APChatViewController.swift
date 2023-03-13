@@ -423,5 +423,6 @@ extension APChatViewController: MessagesLayoutDelegate {
     
     func messageBottomLabelHeight(for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> CGFloat {
         return 18
+        
     }
 }

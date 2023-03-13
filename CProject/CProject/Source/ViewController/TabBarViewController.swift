@@ -14,7 +14,7 @@ class TapBarViewController: UITabBarController {
     
     private lazy var chattingViewController: UIViewController = {
         let viewController = ChattingViewController()
-        let tabBarItem = UITabBarItem(title: "채팅", image: UIImage(named: "Chatting_TabBar_Gray"), tag: 1)
+        let tabBarItem = UITabBarItem(title: "채팅", image: UIImage(named: "Recruitment_TabBar_Gray"), tag: 1)
         viewController.tabBarItem = tabBarItem
         let navigationView = UINavigationController(rootViewController: viewController)
         return navigationView
@@ -62,9 +62,9 @@ extension UITabBarController {
             tabBar.scrollEdgeAppearance = tabBar.standardAppearance
         }
         
-        self.tabBar.tintColor = .black
         self.tabBar.layer.cornerRadius = 8
         self.tabBar.layer.backgroundColor = UIColor.systemBackground.cgColor
+//        self.tabBar.tintColor = .black
         tabBar.layer.masksToBounds = false
         tabBar.layer.shadowColor = UIColor.black.cgColor
         tabBar.layer.shadowOpacity = 0.3

@@ -11,7 +11,7 @@ class ChannelVC: BaseVC {
     
     lazy var navLabel = UILabel().then {
         $0.textColor = UIColor.black
-        $0.text = "친구들";
+        $0.text = "친구들"
         $0.font = .systemFont(ofSize: 25.0, weight: .bold)
     }
     

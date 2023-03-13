@@ -1748,7 +1748,7 @@
 		9C23752603B35F92F9647E91ADDF645A /* Reactive+UIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Reactive+UIViewController.swift"; path = "RxFlow/Extensions/Reactive+UIViewController.swift"; sourceTree = "<group>"; };
 		9C9B08AD1993C6AAB57D2D3534FFA590 /* Observable+Concurrency.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Observable+Concurrency.swift"; path = "RxSwift/Observable+Concurrency.swift"; sourceTree = "<group>"; };
 		9D07B8E06F5339FF8211D0F790CCA9E6 /* RxCocoa-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RxCocoa-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DAB5E676109874491AE98C934282420 /* Driver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Driver.swift; path = RxCocoa/Traits/Driver/Driver.swift; sourceTree = "<group>"; };
 		9DEC0A4EF9343F89C9FE9D9E276BAC59 /* Materialize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Materialize.swift; path = RxSwift/Observables/Materialize.swift; sourceTree = "<group>"; };
 		9E64A62D25FF6FE82053DC73207CB882 /* InputBarAccessoryView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "InputBarAccessoryView-Info.plist"; sourceTree = "<group>"; };
@@ -2350,7 +2350,6 @@
 				35AABE93AFDA893E69B23A07337DA2C0 /* IQUIViewController+Additions.swift */,
 				6F3244EE9CD48EF8B3D7466626A217AB /* Support Files */,
 			);
-			name = IQKeyboardManagerSwift;
 			path = IQKeyboardManagerSwift;
 			sourceTree = "<group>";
 		};
@@ -2364,7 +2363,6 @@
 				2EA6E6E57F80168E00D183048E972EE0 /* Utils.swift */,
 				36638EB062C07318C427F4AD54F7E58C /* Support Files */,
 			);
-			name = RxRelay;
 			path = RxRelay;
 			sourceTree = "<group>";
 		};
@@ -2429,7 +2427,6 @@
 				60CAC4091A179D44FC2EF1CB4A6B2C8D /* SwiftyJSON.swift */,
 				778754B0E88E714D35DE4E9914F0DC0A /* Support Files */,
 			);
-			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -2563,7 +2560,6 @@
 				10487919A4893CDA9874D9768F14F2D3 /* WKWebView+Rx.swift */,
 				1D387EC2A554562B0FD0FD7ADB127CD1 /* Support Files */,
 			);
-			name = RxCocoa;
 			path = RxCocoa;
 			sourceTree = "<group>";
 		};
@@ -2574,7 +2570,6 @@
 				E78AD32CD8D25362BFA5C2B5D2570E87 /* RxSwift */,
 				C0572C66B39395DFA2BD6EB027F95488 /* Support Files */,
 			);
-			name = Moya;
 			path = Moya;
 			sourceTree = "<group>";
 		};
@@ -2756,7 +2751,6 @@
 				F7509C7FFC05ECA814CBA2B8067EADB3 /* Zip+Collection.swift */,
 				7D9DFC20870750D9658D3DDA79713E83 /* Support Files */,
 			);
-			name = RxSwift;
 			path = RxSwift;
 			sourceTree = "<group>";
 		};
@@ -2914,7 +2908,6 @@
 				64F8AB95043ED494164C51ABDD06727F /* UIViewController+.swift */,
 				74DE5C51A6EB1C1595CB8AF4E34B7CE1 /* Support Files */,
 			);
-			name = SwiftyContextMenu;
 			path = SwiftyContextMenu;
 			sourceTree = "<group>";
 		};
@@ -2924,7 +2917,6 @@
 				4B8CE0B09C0E5B27A205A4980C50C9DC /* Then.swift */,
 				CE6471621666F9EF321EE8E22A355819 /* Support Files */,
 			);
-			name = Then;
 			path = Then;
 			sourceTree = "<group>";
 		};
@@ -2970,7 +2962,6 @@
 				C45E1DE6340B7A4849BC2BCC207CFB0E /* UILayoutSupport+Extensions.swift */,
 				F81E0483AFB05575DAC53757A9BCAA07 /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -3003,7 +2994,6 @@
 				78818412CB9D1A9BF95E3022C0DB5A00 /* Core */,
 				77113D24077A04C9BE54C20C6EA0F8A6 /* Support Files */,
 			);
-			name = InputBarAccessoryView;
 			path = InputBarAccessoryView;
 			sourceTree = "<group>";
 		};
@@ -3083,7 +3073,6 @@
 				E039A58FBA81A71FDB2AF46312125163 /* Resources */,
 				41FB283AE0F08A049DF3BC47E11B5A24 /* Support Files */,
 			);
-			name = MessageKit;
 			path = MessageKit;
 			sourceTree = "<group>";
 		};
@@ -3272,7 +3261,6 @@
 				22F318013920B4F85C58C2A2BAECE813 /* VisibilityAnimation.swift */,
 				7A52DBB98669F74E1D7AD4982968FB56 /* Support Files */,
 			);
-			name = "lottie-ios";
 			path = "lottie-ios";
 			sourceTree = "<group>";
 		};
@@ -3317,7 +3305,6 @@
 				690202FA7B1CD10749F4190CC81AC8B1 /* Validation.swift */,
 				A527135F011741C50E8BB0AB56BB472D /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -3340,7 +3327,6 @@
 				2E3D47E83A5F0E9495EAC347A0C12A03 /* UIWindow+Presentable.swift */,
 				FF4962ED4A45B7C9391AFF92D49823FF /* Support Files */,
 			);
-			name = RxFlow;
 			path = RxFlow;
 			sourceTree = "<group>";
 		};
@@ -3515,7 +3501,6 @@
 				B91F24D191B01A82A28B1638C67EE280 /* Core */,
 				2CEDBB6CBC3F7F254D6F4873DBF9C965 /* Support Files */,
 			);
-			name = Kingfisher;
 			path = Kingfisher;
 			sourceTree = "<group>";
 		};
@@ -3567,7 +3552,6 @@
 				11BC17243A89BF8E3FF6EF184382C5FD /* JGProgressHUDSuccessIndicatorView.m */,
 				0A5C55936416EB1E738451C135DC2E83 /* Support Files */,
 			);
-			name = JGProgressHUD;
 			path = JGProgressHUD;
 			sourceTree = "<group>";
 		};

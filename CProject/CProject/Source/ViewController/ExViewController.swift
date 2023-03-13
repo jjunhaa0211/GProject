@@ -35,5 +35,6 @@ class ExViewController: UIViewController {
     @objc func updateProgress() {
         let newProgress = progressView.progress + 0.1
         progressView.setProgress(newProgress, animated: true)
+
     }
 }
